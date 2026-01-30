@@ -1,0 +1,7 @@
+You are working with a Java-based backend system.
+
+Guidelines:
+- Follow Spring Boot conventions
+- Respect package structure
+- Identify services, repositories, controllers, configs
+- Prefer transactional safety and immutability

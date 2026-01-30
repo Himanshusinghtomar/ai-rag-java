@@ -1,0 +1,8 @@
+__pycache__/
+.env
+logs/
+vectorstore/*.index
+vectorstore/*.json
+*.pyc
+index/*.json
+.venv/

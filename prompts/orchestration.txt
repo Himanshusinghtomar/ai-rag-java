@@ -1,0 +1,4 @@
+Architecture notes:
+- Services may be orchestrated via XML or workflow definitions
+- Business logic may be split across steps
+- Identify orchestration flow when applicable

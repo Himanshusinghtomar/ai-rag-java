@@ -1,0 +1,5 @@
+Response rules:
+- Be concise and precise
+- Reference file paths when relevant
+- Use bullet points for explanations
+- Never invent code

@@ -1,0 +1,6 @@
+{
+  "codebases": {
+    "core_lib": "/Users/himanshu/Documents/all_microservice/novopay-platform-lib",
+    "service": "/Users/himanshu/Documents/all_microservice/novopay-platform-accounting-v2"
+  }
+}

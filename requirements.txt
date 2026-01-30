@@ -1,0 +1,8 @@
+javalang==0.13.0
+pyyaml
+tqdm
+faiss-cpu
+sentence-transformers
+numpy<2
+fastapi
+uvicorn

@@ -1,0 +1,22 @@
+project:
+  language: java
+  architecture: layered
+  patterns:
+    - spring
+    - orchestration_xml
+
+chunking:
+  strategy: method
+  max_lines: 80
+
+indexing:
+  include_tests: false
+  include_configs: true
+  supported_extensions:
+    - .java
+    - .xml
+    - .yaml
+    - .yml
+
+retrieval:
+  top_k: 3
