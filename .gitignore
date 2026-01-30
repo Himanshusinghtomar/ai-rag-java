@@ -6,3 +6,4 @@ vectorstore/*.json
 *.pyc
 index/*.json
 .venv/
+config/*.json

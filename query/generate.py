@@ -3,8 +3,8 @@ import requests
 from query.search import retrieve_context
 from query.prompt_loader import load_prompt
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL = "qwen2.5-coder"
+OLLAMA_URL = "http://localhost:11434/api/chat"
+MODEL = "qwen2.5-coder:7b"  # Changed to match your model
 
 def ask(question: str):
     system_prompt = load_prompt(
@@ -16,9 +16,7 @@ def ask(question: str):
 
     context = retrieve_context(question)
 
-    prompt = f"""
-{system_prompt}
-
+    user_prompt = f"""
 ### PROJECT CONTEXT
 {context}
 
@@ -30,11 +28,20 @@ def ask(question: str):
 
     payload = {
         "model": MODEL,
-        "prompt": prompt,
-        "stream": False
+        "messages": [
+            {
+                "role": "system",
+                "content": system_prompt
+            },
+            {
+                "role": "user",
+                "content": user_prompt
+            }
+        ],
+        "stream": False  # This is important!
     }
 
     response = requests.post(OLLAMA_URL, json=payload, timeout=120)
     response.raise_for_status()
 
-    return response.json()["response"]
+    return response.json()["message"]["content"]

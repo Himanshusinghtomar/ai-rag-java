@@ -1,7 +1,7 @@
 # query/prompt_loader.py
 from pathlib import Path
 
-PROMPT_DIR = Path("prompt")
+PROMPT_DIR = Path("prompts")
 
 def load_prompt(*files):
     parts = []
