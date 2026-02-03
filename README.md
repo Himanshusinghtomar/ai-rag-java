@@ -347,8 +347,7 @@ Contributions welcome! Areas for improvement:
 - Web UI for queries
 
 ## 📄 License
-
-[Add your license here]
+Whomsoever can take benefits
 
 ## 🙏 Acknowledgments
 
