@@ -1,6 +1,6 @@
 {
   "codebases": {
-    "core_lib": "/Users/himanshu/Documents/all_microservice/novopay-platform-lib",
-    "service": "/Users/himanshu/Documents/all_microservice/novopay-platform-accounting-v2"
+    "core_lib": "/Users/himanshu/Documents/all_microservice/<<YOUR LIB FILE PATH IF YOU HAVE>>>",
+    "service": "/Users/himanshu/Documents/all_microservice/<<YOUR MS FILE PATH, YOU CAN GIVE COMMA SEPRATED MORE>>>"
   }
 }
